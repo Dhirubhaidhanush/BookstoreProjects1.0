@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Link css-->
+    <link rel="stylesheet" href="style.css">
+    <!--link tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <!--Logo section-->
+    <section class="py-5 bg-slate-200">
+        <div class="2xl:container mx-auto w-[100%]">
+            <div class="mx-auto w-[90%] grid grid-cols-1 md:grid-cols-2 space-y-5">
+                <div class="flex flex-row justify-between">
+                    <img class="h-20"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/logo.png?updatedAt=1728996677651"
+                        alt="">
+                    <div>
+                        <svg class="md:hidden w-80 h-14" id="menuIcon" viewbox="0 0 700 1000" fill="currentColor" height="1em"
+                            width="1em">
+                            <path
+                                d="M650 450c14.667 0 26.667 5 36 15 9.333 10 14 21.667 14 35 0 13.333-5 25-15 35s-21.667 15-35 15H50c-13.333 0-25-5-35-15S0 513.333 0 500c0-13.333 4.667-25 14-35s21.333-15 36-15h600M50 350c-13.333 0-25-5-35-15S0 313.333 0 300c0-13.333 4.667-25 14-35s21.333-15 36-15h600c14.667 0 26.667 5 36 15 9.333 10 14 21.667 14 35 0 13.333-5 25-15 35s-21.667 15-35 15H50m600 300c14.667 0 26.667 5 36 15 9.333 10 14 21.667 14 35 0 13.333-5 25-15 35s-21.667 15-35 15H50c-13.333 0-25-5-35-15S0 713.333 0 700c0-13.333 4.667-25 14-35s21.333-15 36-15h600" />
+                        </svg>
+                        <svg fill="none" viewbox="0 0 15 15" height="1em" width="1em" class="hidden md:hidden w-80 h-14"
+                            id="crossIcon">
+                            <path fill="currentColor" fillrule="evenodd"
+                                d="M11.782 4.032a.575.575 0 10-.813-.814L7.5 6.687 4.032 3.218a.575.575 0 00-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 00.814.814L7.5 8.313l3.469 3.469a.575.575 0 00.813-.814L8.313 7.5l3.469-3.468z"
+                                clipRule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="hidden md:block" id="content">
+                    <nav>
+                        <ul class="flex flex-col md:flex-row md:justify-end justify-center items-center gap-4  font-[Poppins] font-[700]">
+                            <a href="#">Home</a>
+                            <a href="#">FeaturedBooks</a>
+                            <a href="#">New Arrivals</a>
+                            <a href="#">Reviews</a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Welcome section-->
+    <section class="py-10">
+        <div class="2xl:container mx-auto w-[100%]">
+            <div class="mx-auto w-[90%] grid grid-cols-1 lg:grid-cols-2 gap-7">
+                <div class="flex flex-col justify-center items-center lg:items-start  space-y-5">
+                    <h1 class="text-[36px] font-[500] font-[Poppins]">WELCOME TO <br> BOOK STORE</h1>
+                    <p class="text-[16px] font-[400] font-[Poppins]">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Esse atque recusandae impedit dolores
+                        sequi nobis optio, voluptatum rem ducimus quos, assumenda fugiat! Soluta odit voluptas nesciunt
+                        laborum, expedita assumenda ab, aut nostrum unde possimus officia atque nihil quidem temporibus
+                        vero. Id facilis quos vel quam facere placeat incidunt suscipit magnam.
+                    </p>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <img src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/table.png?updatedAt=1728996678769"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Service section-->
+    <section class="py-5">
+        <div class="2xl:container mx-auto w-[100%]">
+            <div class="mx-auto w-[90%] grid grid-cols-1 lg:grid-cols-4 gap-5">
+                <div
+                    class="flex flex-col justify-center items-center text-center bg-slate-100 px-4 py-4 h-44 shadow-lg gap-1">
+                    <svg class="h-60 w-60" viewbox="0 0 24 24" fill="currentColor" height="1em" width="1em" {...props}>
+                        <path
+                            d="M19.15 8a2 2 0 00-1.72-1H15V5a1 1 0 00-1-1H4a2 2 0 00-2 2v10a2 2 0 001 1.73 3.49 3.49 0 007 .27h3.1a3.48 3.48 0 006.9 0 2 2 0 002-2v-3a1.07 1.07 0 00-.14-.52zM15 9h2.43l1.8 3H15zM6.5 19A1.5 1.5 0 118 17.5 1.5 1.5 0 016.5 19zm10 0a1.5 1.5 0 111.5-1.5 1.5 1.5 0 01-1.5 1.5z" />
+                    </svg>
+                    <h1 class="text-[25px] font-[700] font-[Poppins]">Fast Delivery</h1>
+                    <p class="text-[16px] font-[500] font-[Poppins]">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Numquam, unde?</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center text-center bg-slate-100 px-4 py-4 h-44 shadow-lg gap-1">
+                    <svg class="h-60 w-60" viewBox="0 0 512 512" fill="currentColor" height="1em" width="1em"
+                        {...props}>
+                        <path
+                            d="M256 48C141.1 48 48 141.1 48 256v40c0 13.3-10.7 24-24 24S0 309.3 0 296v-40C0 114.6 114.6 0 256 0s256 114.6 256 256v144.1c0 48.6-39.4 88-88.1 88l-110.3-.1c-8.3 14.3-23.8 24-41.6 24h-32c-26.5 0-48-21.5-48-48s21.5-48 48-48h32c17.8 0 33.3 9.7 41.6 24l110.4.1c22.1 0 40-17.9 40-40V256c0-114.9-93.1-208-208-208zM144 208h16c17.7 0 32 14.3 32 32v112c0 17.7-14.3 32-32 32h-16c-35.3 0-64-28.7-64-64v-48c0-35.3 28.7-64 64-64zm224 0c35.3 0 64 28.7 64 64v48c0 35.3-28.7 64-64 64h-16c-17.7 0-32-14.3-32-32V240c0-17.7 14.3-32 32-32h16z" />
+                    </svg>
+                    <h1 class="text-[25px] font-[700] font-[Poppins]">24 X 7 Services</h1>
+                    <p class="text-[16px] font-[500] font-[Poppins]">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Numquam, unde?</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center text-center bg-slate-100 px-4 py-4 h-44 shadow-lg gap-1">
+                    <svg class="h-60 w-60" fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em" {...props}>
+                        <path
+                            d="M2 2a1 1 0 011-1h4.586a1 1 0 01.707.293l7 7a1 1 0 010 1.414l-4.586 4.586a1 1 0 01-1.414 0l-7-7A1 1 0 012 6.586V2zm3.5 4a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                        <path
+                            d="M1.293 7.793A1 1 0 011 7.086V2a1 1 0 00-1 1v4.586a1 1 0 00.293.707l7 7a1 1 0 001.414 0l.043-.043-7.457-7.457z" />
+                    </svg>
+                    <h1 class="text-[25px] font-[700] font-[Poppins]">Best Deal</h1>
+                    <p class="text-[16px] font-[500] font-[Poppins]">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Numquam, unde?</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center text-center bg-slate-100 px-4 py-4 h-44 shadow-lg gap-1">
+                    <svg class="h-60 w-60" viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em" {...props}>
+                        <path
+                            d="M12 2C9.243 2 7 4.243 7 7v2H6c-1.103 0-2 .897-2 2v9c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-9c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v2H9V7zm9.002 13H13v-2.278c.595-.347 1-.985 1-1.722 0-1.103-.897-2-2-2s-2 .897-2 2c0 .736.405 1.375 1 1.722V20H6v-9h12l.002 9z" />
+                    </svg>
+
+                    <h1 class="text-[25px] font-[700] font-[Poppins]">Secure Payment</h1>
+                    <p class="text-[16px] font-[500] font-[Poppins]">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Numquam, unde?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About section-->
+    <section class="py-10">
+        <div class="2xl:container mx-auto w-[100%]">
+            <div class="mx-auto w-[90%] grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <div class="flex flex-col justify-center items-center gap-3">
+                    <img src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/about.png?updatedAt=1728996678609"
+                        alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center lg:items-start space-y-5">
+                    <h1 class="text-[36px] font-[700] font-[Poppins]">About Us</h1>
+                    <p class="font-[Poppins] font-[400]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Debitis exercitationem distinctio magnam fugiat mollitia consequuntur provident fuga ex
+                        cupiditate ab qui iste minima excepturi, ipsa labore nam maiores doloribus doloremque et quasi
+                        impedit dolorum. Quidem repellendus assumenda repudiandae quis eveniet fugit eos illum aliquam,
+                        culpa illo voluptatibus a magnam nihil, libero incidunt exercitationem natus unde mollitia alias
+                        vero, veritatis repellat quo! Quos, in et earum voluptatem, commodi itaque eos id dolor
+                        architecto similique debitis illum doloribus vitae velit optio consequuntur ratione sit, quis
+                        nam consequatur ipsum aut dignissimos. Odit beatae distinctio asperiores doloremque vitae
+                        maiores placeat saepe dolores voluptate maxime?</p>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--heading section-->
+    <section class="py-5">
+        <div class="2xl:container mx-auto w-[100%]">
+            <div class="mx-auto w-[90%] grid grid-cols-1">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-[36px] font-[700] font-[Poppins]">Featured Books</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--book images section 1-->
+    <section class="py-5">
+        <div class="2xl:container mx-auto w-[100%]">
+            <div class="mx-auto w-[90%] grid grid-cols-1 lg:grid-cols-5 gap-5">
+                <div class="flex flex-col justify-center items-center space-y-2 shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/book_1.jpg?updatedAt=1728996669197"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">Featured Books</h1>
+                    <p class="text-[16px] text-slate-300 font-[700] font-[Poppins]">John Deo</p>
+                    <p class="text-[16px]  font-[700] font-[Poppins]">Thriller,Horror,Romance</p>
+                    <p class="text-[16px]  font-[700] font-[Poppins]">$25.50</p>
+                    <p class="text-[16px] text-slate-300 font-[700] font-[Poppins]">$28.60</p>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-2 shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/book_2.jpg?updatedAt=1728996669204"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">Featured Books</h1>
+                    <p class="text-[16px] text-slate-300 font-[700] font-[Poppins]">John Deo</p>
+                    <p class="text-[16px]  font-[700] font-[Poppins]">Thriller,Horror,Romance</p>
+                    <p class="text-[16px]  font-[700] font-[Poppins]">$25.50</p>
+                    <p class="text-[16px] text-slate-300 font-[700] font-[Poppins]">$28.60</p>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-2 shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/book_3.jpg?updatedAt=1728996669113"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">Featured Books</h1>
+                    <p class="text-[16px] text-slate-300 font-[700] font-[Poppins]">John Deo</p>
+                    <p class="text-[16px]  font-[700] font-[Poppins]">Thriller,Horror,Romance</p>
+                    <p class="text-[16px]  font-[700] font-[Poppins]">$25.50</p>
+                    <p class="text-[16px] text-slate-300 font-[700] font-[Poppins]">$28.60</p>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-2 shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/book_4.jpg?updatedAt=1728996669170"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">Featured Books</h1>
+                    <p class="text-[16px] text-slate-300 font-[700] font-[Poppins]">John Deo</p>
+                    <p class="text-[16px]  font-[700] font-[Poppins]">Thriller,Horror,Romance</p>
+                    <p class="text-[16px]  font-[700] font-[Poppins]">$25.50</p>
+                    <p class="text-[16px] text-slate-300 font-[700] font-[Poppins]">$28.60</p>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-2 shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/book_5.jpg?updatedAt=1728996673161"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">Featured Books</h1>
+                    <p class="text-[16px] text-slate-300 font-[700] font-[Poppins]">John Deo</p>
+                    <p class="text-[16px]  font-[700] font-[Poppins]">Thriller,Horror,Romance</p>
+                    <p class="text-[16px]  font-[700] font-[Poppins]">$25.50</p>
+                    <p class="text-[16px] text-slate-300 font-[700] font-[Poppins]">$28.60</p>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Book images section 2-->
+    <section class="py-10">
+        <div class="2xl:container mx-auto w-[100%]">
+            <div class="mx-auto w-[90%] grid grid-cols-1">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-[36px] font-[700] font-[Poppins]">New Arrivals</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="2xl:container mx-auto w-[100%]">
+            <div class="mx-auto w-[90%] grid grid-cols-1 lg:grid-cols-5 gap-5">
+                <div class="flex flex-col justify-center items-center space-y-2  shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/arrival_1.jpg?updatedAt=1728996678645"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">NEW ARRIVALS</h1>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-2 shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/arrival_2.jpg?updatedAt=1728996678842"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">NEW ARRIVALS</h1>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-2  shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/arrival_3.jpg?updatedAt=1728996681637"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">NEW ARRIVALS</h1>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-2  shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/arrival_4.jpg?updatedAt=1728996681577"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">NEW ARRIVALS</h1>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-2 shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/arrival_5.jpg?updatedAt=1728996682090"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">NEW ARRIVALS</h1>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--New arrivals-->
+    <section class="py-5">
+        <div class="2xl:container mx-auto w-[100%]">
+            <div class="mx-auto w-[90%] grid grid-cols-1 lg:grid-cols-5 gap-5">
+                <div class="flex flex-col justify-center items-center space-y-2 shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/arrival_6.jpg?updatedAt=1728996682398"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">NEW ARRIVALS</h1>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-2  shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/arrival_7.jpg?updatedAt=1728996684708"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">NEW ARRIVALS</h1>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-2  shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/arrival_8.webp?updatedAt=1728996684118"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">NEW ARRIVALS</h1>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-2 shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/arrival_9.jpg?updatedAt=1728996669944"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">NEW ARRIVALS</h1>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-2 shadow-xl p-10">
+                    <img class="h-56 w-56"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/arrival_10.jpg?updatedAt=1728996683658"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">NEW ARRIVALS</h1>
+                    <button class="bg-slate-950 text-white px-4 py-2 font-[Poppins]">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Review section-->
+    <section class="py-10">
+        <div class="2xl:container mx-auto w-[100%]">
+            <div class="w-[90%] mx-auto grid grid-cols-1">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-[36px] font-[700] font-[Poppins]">Reviews</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Review-->
+    <section class="py-10 bg-[#10375C] text-black">
+        <div class="2xl:container mx-auto w-[100%]">
+            <div class="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-5">
+                <div
+                    class="flex flex-col justify-center items-center space-y-2  shadow-lg p-5 bg-white rounded-lg text-center lg:text-start">
+                    <img class="h-16 rounded-full"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/review_1.png?updatedAt=1728996677931"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">John Deo</h1>
+                    <p class="font-[400] font-[Poppins]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                        veritatis, voluptatibus sequi neque repellendus molestias eaque voluptatem eligendi.</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center space-y-2  shadow-lg p-5 bg-white rounded-lg text-center lg:text-start">
+                    <img class="h-16 rounded-full"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/review_2.png?updatedAt=1728996677256"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">Angelina</h1>
+                    <p class="font-[Poppins] font-[400]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Commodi hic eos, veritatis ipsam consequatur nesciunt veniam id minima temporibus repellat.</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center space-y-2  shadow-lg p-5 bg-white rounded-lg text-center lg:text-start">
+                    <img class="h-16 rounded-full"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/review_3.png?updatedAt=1728996678164"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">Steve Harvey</h1>
+                    <p class="font-[Poppins] font-[400]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                        laboriosam sunt nesciunt mollitia numquam. Pariatur numquam ex suscipit ut eos.</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center space-y-2 shadow-lg p-5 bg-white rounded-lg text-center lg:text-start">
+                    <img class="h-16 rounded-full"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/review_4.png?updatedAt=1728996678662"
+                        alt="">
+                    <h1 class="text-[20px] font-[700] font-[Poppins]">Lidiya Marry</h1>
+                    <p class="font-[400] font-[Poppins]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Asperiores fuga dolores quod assumenda reprehenderit doloribus optio, cum architecto vel ex.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Card image-->
+    <section class="py-10">
+        <div class="2xl:container mx-auto">
+            <div class="mx-auto grid grid-cols-1">
+                <div class="flex flex-col justify-center items-center">
+                    <img class="h-96 w-[100%]"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/banner.jpg?updatedAt=1728996669514"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Blog section-->
+    <section class="py-10">
+        <div class="2xl:container mx-auto w-[100%]">
+            <div class="mx-auto w-[90%] grid grid-cols-1 lg:grid-cols-1">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-[36px] font-[700]">Our Blog</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Blog images-->
+    <section class="py-10">
+        <div class="2xl:container mx-auto w-[100%]">
+            <div class="mx-auto w-[90%] grid grid-cols-1 lg:grid-cols-3 gap-5">
+                <div
+                    class="flex flex-col justify-center items-center lg:items-start px-5 py-5 shadow-lg rounded-lg space-y-2">
+                    <img class="h-80 w-96 rounded-lg"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/blog_1.jpg?updatedAt=1728996669822"
+                        alt="">
+                    <h1 class="text-[20px] font-[700]">Bloger</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati autem distinctio libero
+                        aspernatur natus quisquam possimus iusto reiciendis quidem dolor!</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center lg:items-start px-5 py-5 shadow-lg rounded-lg space-y-2">
+                    <img class="h-80 w-96 rounded-lg"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/blog_2.jpg?updatedAt=1728996669788"
+                        alt="">
+                    <h1 class="text-[20px] font-[700]">Bloger</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati autem distinctio libero
+                        aspernatur natus quisquam possimus iusto reiciendis quidem dolor!</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center lg:items-start px-5 py-5 shadow-lg rounded-lg space-y-2">
+                    <img class="h-80 w-96 rounded-lg"
+                        src="https://ik.imagekit.io/98z8afjbc/Bookstore%20images/blog_3.jpg?updatedAt=1728996670194"
+                        alt="">
+                    <h1 class="text-[20px] font-[700]">Bloger</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati autem distinctio libero
+                        aspernatur natus quisquam possimus iusto reiciendis quidem dolor!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer section-->
+    <section class="py-10 bg-slate-200">
+        <div class="2xl:container mx-auto w-[100%]">
+            <div class="mx-auto w-[90%] grid grid-cols-1 lg:grid-cols-3 gap-10">
+                <div class="flex flex-col justify-center items-center space-y-20">
+                    <h1 class="text-[30px] font-[700]">NewsLetter</h1>
+                    <input class="bg-[#257180] text-white px-2 py-2 rounded-lg" type="email"
+                        placeholder="Your email id here">
+                    <input class="bg-[#257180] text-white px-2 py-2 rounded-lg" type="number" placeholder="Enter Your Number">
+                    <button class="bg-slate-950 text-white px-4 py-2 rounded-lg">Subscribe</button>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-20">
+                    <h1 class="text-[30px] font-[700]">Contact info</h1>
+                    <p class="text-[20px] font-[500]">+91 123459789</p>
+                    <p class="text-[20px] font-[500]">+94 323456788</p>
+                    <p class="text-[20px] font-[700]">bookstore123@gmail.com</p>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-14">
+                    <h1 class="text-[30px] font-[700]">Follow us</h1>
+                    <div class="flex flex-col justify-center items-center space-y-16">
+                        <svg class="h-6 w-6" viewbox="0 0 1024 1024" fill="currentColor" height="1em" width="1em"
+                            {...props}>
+                            <path
+                                d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9a47.84 47.84 0 00-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z" />
+                        </svg>
+                        <svg class="h-6 w-6" viewbox="0 0 1024 1024" fill="currentColor" height="1em" width="1em"
+                            {...props}>
+                            <path
+                                d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0075-94 336.64 336.64 0 01-108.2 41.2A170.1 170.1 0 00672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 00-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 01-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 01-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z" />
+                        </svg>
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em"
+                            {...props}>
+                            <path
+                                d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0014.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z" />
+                        </svg>
+                        <a href="https://www.linkedin.com/in/vs-dhirubhai-519848300/"><svg class="h-6 w-6"
+                                viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em" {...props}>
+                                <path
+                                    d="M7.170999999999999 5.009 A2.188 2.188 0 0 1 4.983 7.197000000000001 A2.188 2.188 0 0 1 2.7949999999999995 5.009 A2.188 2.188 0 0 1 7.170999999999999 5.009 z" />
+                                <path
+                                    d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const menuElement = document.getElementById("menuIcon");
+        const crossElement = document.getElementById("crossIcon");
+        const contentElement = document.getElementById("content");
+
+        menuElement.addEventListener("click", () => {
+            menuElement.classList.toggle("hidden");
+            crossElement.classList.toggle("hidden");
+            contentElement.classList.toggle("hidden");
+        });
+
+        crossElement.addEventListener("click", () => {
+            menuElement.classList.toggle("hidden");
+            crossElement.classList.toggle("hidden");
+            contentElement.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
